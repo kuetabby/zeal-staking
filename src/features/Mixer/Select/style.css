@@ -1,0 +1,28 @@
+.currency-list {
+  @apply max-h-80 overflow-auto;
+}
+
+.currency-list::-webkit-scrollbar-thumb {
+  /* Customize the scrollbar thumb */
+  @apply bg-indigo-500 border border-indigo-500 rounded-xl;
+}
+
+.currency-list::-webkit-scrollbar {
+  width: 5px;
+  /* Customize the scrollbar width */
+  @apply bg-transparent;
+}
+
+.currency-list::-webkit-scrollbar-track {
+  /* Customize the scrollbar track */
+  /* @apply bg-yellow-500 border border-yellow-500 rounded-xl; */
+}
+
+.ant-collapse-item > .ant-collapse-header,
+.ant-collapse-item > .ant-collapse-content {
+  @apply !text-white;
+}
+
+.ant-collapse-header {
+  @apply text-center;
+}

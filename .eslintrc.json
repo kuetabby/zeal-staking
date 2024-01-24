@@ -1,3 +1,19 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    // add rules
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/display-name": "off",
+    "react/no-unescaped-entities": 0,
+    "no-prototype-builtins": "off",
+    "no-mixed-spaces-and-tabs": 0,
+    "no-undef": "warn",
+    "no-extra-boolean-cast": "warn",
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
+    // "prettier/prettier": "warn", //A warning will pop up when the prettier setting is not met
+    "react/react-in-jsx-scope": "off" // You must use the import React rule to close jsx files
+    // "max-lines": ["warn", 500]
+  }
 }

@@ -1,0 +1,102 @@
+/* 
+    HEADER
+*/
+
+.header-bar-wrapper {
+  @apply w-2/4 flex justify-between;
+}
+
+.header-icon-wrapper {
+  @apply w-1/3 flex justify-end;
+}
+
+.header-icon {
+  @apply cursor-pointer w-max;
+}
+
+.header-icon:hover,
+.header-settings-back-icon:hover {
+  @apply bg-dark-hover;
+  transition: 250;
+}
+
+.header-settings-back-icon {
+  @apply text-gray-500 dark:text-white hover:!text-black hover:dark:!text-gray-500;
+}
+
+.header-settings-modal > .ant-modal-content > .ant-modal-header {
+  @apply bg-transparent;
+}
+
+.header-settings-modal > .ant-modal-content {
+  /* @apply p-3 bg-white dark:bg-dark-secondary; */
+  @apply bg-light-secondary dark:bg-dark-primary pt-4 pb-6 px-3;
+}
+
+.header-settings-modal > .ant-modal-content > .ant-modal-close {
+  /* @apply text-black dark:text-white; */
+  @apply -mt-1 bg-transparent dark:bg-slate-800 dark:text-white hover:dark:text-gray-500;
+}
+
+.header-settings-title-container {
+  @apply flex items-center text-black dark:text-white font-semibold pb-2;
+  @apply border-b border-b-dark-main dark:border-b-light-main;
+  border-bottom-style: solid;
+}
+
+.header-settings-body-container {
+  @apply w-full text-base  font-semibold;
+  max-height: 350px;
+  overflow: auto;
+}
+
+.header-settings-wrapper {
+  @apply flex items-center py-1 my-2 cursor-pointer text-black dark:text-white;
+}
+
+.header-settings-left-wrapper {
+  @apply w-1/12 text-center;
+  color: #6c86ad;
+}
+
+.header-settings-center-wrapper {
+  @apply w-7/12 sm:w-6/12 ml-2;
+}
+
+.header-settings-right-wrapper {
+  @apply w-2/5 sm:w-2/3 text-end;
+  color: #6c86ad;
+}
+
+.header-settings-wrapper:hover > .header-settings-right-wrapper {
+  @apply text-black dark:text-white;
+}
+
+.header-slippage-container {
+  @apply flex justify-between items-center w-full;
+}
+
+.header-slippage-list-container {
+  @apply flex justify-between w-3/4 sm:w-2/3 rounded-md bg-slate-100 dark:bg-dark-secondary;
+}
+
+.header-slippage-button {
+  @apply w-12 sm:w-5/12 px-3 border-none outline-none !rounded-lg bg-slate-100 dark:bg-dark-secondary;
+}
+
+.header-slippage-input {
+  @apply bg-slate-100 dark:bg-dark-secondary text-black dark:text-white text-center w-auto overflow-hidden border-none placeholder:!text-slate-500 focus:!outline-0 active:!outline-0;
+}
+
+.frontrun-slippage-container {
+  @apply w-full bg-red-300 opacity-95 mt-3 overflow-auto border-none !rounded-xl dark:bg-red-500 dark:shadow-dark-shadow dark:opacity-100;
+  min-height: 5.5em;
+  max-height: 10em;
+  /* background: rgba(193, 61, 84, 0.25); */
+}
+
+@media (min-width: theme("screens.md")) {
+  .header-icon-wrapper {
+    @apply w-[30%];
+  }
+}

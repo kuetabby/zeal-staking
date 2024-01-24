@@ -1,0 +1,18 @@
+.mix-container {
+  @apply w-full h-full px-2 sm:px-4 m-auto pb-4;
+  /* @apply w-full h-full m-auto relative; */
+  @apply max-w-screen-xl;
+}
+
+.switcher-wrapper {
+  @apply w-6 h-6 rounded-xl m-auto text-white bg-dark-main cursor-pointer hover:opacity-80;
+  background-color: #67819f;
+}
+
+.switcher-wrapper:hover > .switcher-icon {
+  @apply rotate-180;
+}
+
+.switcher-icon {
+  @apply transition duration-300;
+}

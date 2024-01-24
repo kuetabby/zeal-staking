@@ -1,0 +1,62 @@
+.navbar-container {
+  @apply !px-0 w-full !h-[4.5em] sm:!h-20 !bg-dark-primary;
+  /* @apply sticky top-0 z-50 border-b-2 border-b-indigo-500; */
+}
+
+.navbar,
+.navbar-scroll {
+  @apply max-w-screen-2xl w-full h-full m-auto;
+  @apply flex flex-nowrap justify-between items-center;
+  @apply px-2;
+
+  z-index: 1000;
+  /* background-color: var(--gray-footer); */
+  transition: linear;
+  transition-delay: 0.15s;
+  transition-duration: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.navbar {
+  @apply relative h-full;
+}
+
+.navbar-scroll {
+  @apply py-2  bg-dark-main opacity-95;
+}
+
+.navbar-title {
+  @apply bg-copper-shine;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-container {
+  @apply flex cursor-pointer w-full sm:w-auto;
+}
+
+.small-title {
+  @apply md:hidden flex justify-center w-1/2 sm:w-2/3 text-center text-3xl font-extrabold bg-copper-shine;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* @media (min-width: theme("screens.sm")) {
+  .logo-container {
+    margin-right: 0.75rem;
+  }
+} */
+
+@media (min-width: theme("screens.md")) {
+  .logo-container {
+    @apply ml-0 mr-2;
+  }
+}
+
+@media (min-width: theme("screens.2xl")) {
+  .logo-container {
+    margin-right: 1.25rem;
+  }
+}
