@@ -29,6 +29,27 @@
   animation-delay: 0.4s;
 }
 
+.yin-loaders {
+  @apply w-24 h-24 rounded-[50%] border-t-4 border-t-white border-r-4 border-r-transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.yin-loaders::after {
+  /* @apply w-12 h-12 rounded-[50%] absolute top-0 left-0 border-l-4 border-l-white border-b-4 border-b-transparent; */
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border-left: 4px solid #dd6b20;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+
 @keyframes breathing-animation {
   0% {
     transform: scale(1);
@@ -38,5 +59,14 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

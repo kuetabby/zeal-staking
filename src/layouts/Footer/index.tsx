@@ -33,12 +33,8 @@ const AppFooter: React.FC<Props> = () => {
         <div className="all-reserved">
           <div className="w-full sm:w-1/2 flex flex-wrap justify-center sm:justify-start items-center my-2 sm:my-0 order-2 sm:order-1">
             <div className="text-xs font-semibold">
-              Ace
-              <CopyrightOutlined
-                className="mx-1"
-                style={{ fontSize: "1em" }}
-              />{" "}
-              2024 | All Rights Reserved
+              <CopyrightOutlined className="mx-1" style={{ fontSize: "1em" }} />{" "}
+              ZEAL AI 2024. All rights reserved.
             </div>
           </div>
           {/* <div className="w-full sm:w-1/2 flex justify-center sm:justify-end order-1 sm:order-2">

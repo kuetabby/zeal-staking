@@ -61,15 +61,15 @@ const Navbar: React.FC<Props> = () => {
     <div className={clsx("navbar-container", montserrat.className)}>
       {/* <div className={clsx(isScroll ? "navbar-scroll" : "navbar")}> */}
       <div className={clsx("navbar")}>
-        <div className="w-2/5 sm:w-1/5 flex items-center relative">
+        <div className="w-2/5 sm:w-1/2 lg:w-1/4 flex items-center relative">
           <Link
-            href="https://acechain.tech"
+            href="https://www.zeal-ai.net"
             className={`logo-container text-white`}
           >
             <Image
               src={AppLogo}
               alt="app-logo"
-              className="w-14 h-14 rounded-full"
+              className="w-full md:w-full h-16 rounded-full object-contain"
             />
           </Link>
         </div>

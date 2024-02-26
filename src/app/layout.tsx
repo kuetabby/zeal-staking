@@ -7,8 +7,8 @@ import BaseLayout from "@/layouts";
 
 import "./globals.css";
 
-const app_title = "Ace Chain - Staking";
-const app_name = "Ace Chain";
+const app_title = "Zeal AI - Staking";
+const app_name = "Zeal AI";
 const description = "Lock. Earn. Grow";
 
 export const metadata: Metadata = {

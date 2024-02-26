@@ -36,11 +36,11 @@ body {
 }
 
 .tw-connect-wallet {
-  @apply bg-copper-shine !text-white font-semibold;
+  @apply bg-orange-500 !text-white font-semibold;
 }
 
 .tw-connect-wallet:hover {
-  @apply bg-gold-rush;
+  @apply bg-orange-400;
   /* background: #bf00ff; */
   /* @apply bg-light-purple; */
   /* @apply bg-primary font-bold;

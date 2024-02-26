@@ -10,11 +10,11 @@
 }
 
 .stake-title {
-  @apply text-xl sm:text-3xl !font-extrabold;
-  @apply bg-gold-rush;
+  @apply text-xl sm:text-3xl !font-extrabold text-primary;
+  /* @apply bg-orange-400;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .btn-stake {
@@ -34,5 +34,5 @@
 .btn-unstake,
 .btn-claim {
   @apply text-white font-semibold;
-  @apply bg-copper-shine hover:bg-gold-rush active:bg-gold-rush focus:bg-gold-rush;
+  @apply bg-primary hover:bg-orange-400 active:bg-orange-400 focus:bg-orange-400;
 }

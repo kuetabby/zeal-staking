@@ -13,7 +13,7 @@ module.exports = {
     },
     extend: {
       textColor: {
-        primary: "#cd9a2d",
+        primary: "#DD6B20",
         secondary: "#40E0D0",
 
         "dark-main": "#0A0C11",
@@ -21,7 +21,7 @@ module.exports = {
         "light-main": "#D2D6EE",
       },
       backgroundColor: {
-        primary: "#cd9a2d",
+        primary: "#DD6B20",
         secondary: "#40E0D0",
 
         "dark-main": "#0A0C11",
@@ -41,9 +41,9 @@ module.exports = {
           "linear-gradient(55deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 75%, rgba(184,115,51,1) 100%)",
 
         "app-variation-1":
-          "linear-gradient(55deg, #0A0C11 0%, #0A0C11 50%, #0A0C11 75%, rgba(184,115,51,1) 100%)",
+          "linear-gradient(55deg, #0A0C11 0%, #DD6B20 50%, #DD6B20 75%, rgba(184,115,51,1) 100%)",
         "app-variation-2":
-          "linear-gradient(55deg, rgba(184,115,51,1) 0%, #0A0C11 50%, #0A0C11 75%, #0A0C11 100%)",
+          "linear-gradient(55deg, #DD6B20 0%, #0A0C11 50%, #0A0C11 75%, #0A0C11 100%)",
 
         "dark-primary": "linear-gradient(to right, #0A0C11, rgb(19, 24, 35))",
         "dark-fade":
@@ -68,7 +68,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       }),
       borderColor: {
-        primary: "#cd9a2d",
+        primary: "#DD6B20",
         secondary: "#40E0D0",
 
         "dark-main": "#8F8686",
