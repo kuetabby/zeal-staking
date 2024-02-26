@@ -27,7 +27,7 @@ import { useIsMounted } from "@/hooks/useIsMounted";
 import "./style.css";
 import YinLoader from "@/components/Loader/Custom";
 
-const stakingContractAddress = "";
+const stakingContractAddress = "0x40238d07CfA59eFB674c0B379cEcD4Da8Fbd3143";
 
 interface Props {}
 
@@ -157,7 +157,7 @@ const Stake: React.FC<Props> = () => {
       const denominator = BigNumber.from(
         rewardRatio["_denominator"]
       ).toNumber();
-      return (numerator / denominator) * 100 * 52 + " %";
+      return (numerator / denominator) * 100 * 12 + " %";
     }
 
     return "--";
